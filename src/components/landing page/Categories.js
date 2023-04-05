@@ -15,13 +15,15 @@ const Categories = () => {
         <div class="row categories">
           <div
             class="col card position-relative"
-            style={{ width: "18rem", margin: "10px" }}
+            style={{ width: "100px", margin: "10px" }}
           >
-            <img className="card-img-top " src={woman} alt="card woman" />
-            <div className="hovering-card card">
-              <h2>Woman</h2>
-              <p>Spring 2023</p>
-            </div>
+            <img src={woman} alt="card woman" />
+            <span className="text-name">
+              <span>Woman</span>
+              <span>Spring 2023</span>
+            </span>
+            <Link className="shop-link">SHOP NOW</Link>
+            <div className="hovering-card"></div>
           </div>
           <div class="col card" style={{ width: "18rem", margin: "10px" }}>
             <Link>
@@ -35,11 +37,6 @@ const Categories = () => {
           </div>
         </div>
       </div>
-      // <div className='container'>
-      //   <div class="card col-4" style={{ width: "18rem" }}>
-      //     <img class="card-img-top" src={woman} alt="Card" />
-      //     </div>
-      //   </div>
     );
 };
 
