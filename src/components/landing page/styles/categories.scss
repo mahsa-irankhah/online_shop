@@ -1,0 +1,19 @@
+.categories {
+  
+  .hovering-card {
+    width: 18rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(0, 0, 255, 0.5);
+    
+    &:hover {
+    
+    display: block;
+    
+  }
+}
+
+}
