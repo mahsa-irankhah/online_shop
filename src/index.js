@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
+//font
+import "./fonts/Poppins/Poppins-Regular.ttf";
+import "./fonts/Poppins/Poppins-Medium.ttf";
+import "./fonts/Poppins/Poppins-Bold.ttf";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -12,7 +12,7 @@
 
     &:hover {
     
-    background-color: #7483e1a6;
+    background-color: rgba(116, 131, 225, 0.8);
     opacity: 100%;
 
     
@@ -26,17 +26,27 @@
   .text-name {
     position: absolute;
     top: 10%;
-    left: 0;
+    left: 10%;
+    text-align: left;
+
+    .main_name {
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 2;
+      display: block;
+      text-align: left;
+    }
+    
   }
 
   .shop-link {
-      animation: flip 3s 1;
-      animation-delay: calc(.2s * var(--i));
+      animation: flip 1s 2;
       position: absolute;
       top: 70%;
-      color: rgb(255, 255, 255);
+      left: 10%;
+      color: #ffffff;
       font-weight: bold;
-      border: 1px solid black;
+      text-decoration: none;
       display: none;
     }
 

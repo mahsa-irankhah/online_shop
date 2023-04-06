@@ -15,25 +15,36 @@ const Categories = () => {
         <div class="row categories">
           <div
             class="col card position-relative"
-            style={{ width: "100px", margin: "10px" }}
+            style={{ width: "18rem", margin: "10px" }}
           >
             <img src={woman} alt="card woman" />
+            <div className="hovering-card"></div>
             <span className="text-name">
-              <span>Woman</span>
-              <span>Spring 2023</span>
+              <span className="main_name">Woman</span>
+              <span className="sub_name">Spring 2023</span>
             </span>
             <Link className="shop-link">SHOP NOW</Link>
+          </div>
+          <div
+            class="col card position-relative"
+            style={{ width: "18rem", margin: "10px" }}
+          >
+            <img className="card-img-top" src={man} alt="card man" />
             <div className="hovering-card"></div>
+            <span className="text-name">
+              <span className="main_name">Men</span>
+              <span className="sub_name">Spring 2023</span>
+            </span>
+            <Link className="shop-link">SHOP NOW</Link>
           </div>
           <div class="col card" style={{ width: "18rem", margin: "10px" }}>
-            <Link>
-              <img className="card-img-top" src={man} alt="card man" />
-            </Link>
-          </div>
-          <div class="col card" style={{ width: "18rem", margin: "10px" }}>
-            <Link>
-              <img className="card-img-top" src={acc} alt="card accessory" />
-            </Link>
+            <img className="card-img-top" src={acc} alt="card accessory" />
+            <div className="hovering-card"></div>
+            <span className="text-name">
+              <span className="main_name">Accessory</span>
+              <span className="sub_name">New Trend</span>
+            </span>
+            <Link className="shop-link">SHOP NOW</Link>
           </div>
         </div>
       </div>
