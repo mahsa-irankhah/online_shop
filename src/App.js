@@ -7,13 +7,19 @@ import './App.css';
 import Landing from "./components/landing page/Landing";
 import Navbar from "./components/Navbar";
 
+//redux
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-      </Routes>
+      <Provider store = {store}>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+      </Provider>
     </div>
   );
 }

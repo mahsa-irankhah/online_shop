@@ -1,18 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 //icons
 import cart from "../images/shopping-bag.svg";
 import like from "../images/heart.svg";
 import search from "../images/search-icon.svg";
 
+
 const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="">
             Mahsa Store
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,29 +30,29 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="">
                   Shop
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="">
                   Blog
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             <div>
@@ -60,9 +63,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div>
-        <a></a>
-      </div>
+      <div></div>
     </div>
   );
 };
