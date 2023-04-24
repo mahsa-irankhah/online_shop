@@ -1,12 +1,16 @@
 import React from 'react';
+
+//components
+import Hero from "./Hero";
 import Categories from './Categories';
-import Hero from './Hero';
+import Products from './Products';
 
 const Landing = () => {
     return (
         <>
            <Hero /> 
            <Categories />
+           <Products />
         </>
     );
 };

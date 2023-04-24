@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const fetchProductsRequest = () => {
     return {
         type: "FETCH_PRODUCTS_REQUEST"
@@ -21,7 +23,7 @@ const fetchProductsFailure = error => {
 const fetchProducts = () => {
     return (dispatch) => {
         dispatch(fetchProductsRequest());
-        axios.get("'https://fakestoreapi.com/products")
+        axios.get("https://fakestoreapi.com/products")
         .then(response => {
             const products = response.data;
             dispatch(fetchProductsSuccess(products))

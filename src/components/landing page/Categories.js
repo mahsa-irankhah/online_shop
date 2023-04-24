@@ -11,11 +11,11 @@ import "./styles/categories.scss";
 
 const Categories = () => {
     return (
-      <div class="container">
-        <div class="row categories">
+      <div className="container">
+        <div className="row categories">
           <div
-            class="col card position-relative"
-            style={{ width: "18rem", margin: "10px" }}
+            className="col card position-relative"
+            style={{ width: "20rem", height: "250px", margin: "10px" }}
           >
             <img src={woman} alt="card woman" />
             <div className="hovering-card"></div>
@@ -26,8 +26,8 @@ const Categories = () => {
             <Link className="shop-link">SHOP NOW</Link>
           </div>
           <div
-            class="col card position-relative"
-            style={{ width: "18rem", margin: "10px" }}
+            className="col card position-relative"
+            style={{ width: "18rem", height: "250px", margin: "10px" }}
           >
             <img className="card-img-top" src={man} alt="card man" />
             <div className="hovering-card"></div>
@@ -37,7 +37,10 @@ const Categories = () => {
             </span>
             <Link className="shop-link">SHOP NOW</Link>
           </div>
-          <div class="col card" style={{ width: "18rem", margin: "10px" }}>
+          <div
+            className="col card"
+            style={{ width: "18rem", height: "250px", margin: "10px" }}
+          >
             <img className="card-img-top" src={acc} alt="card accessory" />
             <div className="hovering-card"></div>
             <span className="text-name">

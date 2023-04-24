@@ -6,6 +6,7 @@ import './App.css';
 //components
 import Landing from "./components/landing page/Landing";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 //redux
 import { Provider } from "react-redux";
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
         </Routes>
+        <Footer />
       </Provider>
     </div>
   );

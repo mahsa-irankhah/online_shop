@@ -1,0 +1,16 @@
+.card {
+  border: none;
+  margin: 15px;
+  margin-bottom: 50px;
+  //   -webkit-box-shadow: 5px 5px 10px -2px rgba(61, 61, 61, 0.7);
+  //   box-shadow: 5px 5px 10px -2px rgba(61, 61, 61, 0.7);
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  img {
+    width: 90%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    overflow: hidden;
+  }
+}
