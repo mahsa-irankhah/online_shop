@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 //styles
-import "./styles/categories.scss";
+import "../styles/categories.scss";
 
 //images
  import woman from "../../images/categories/banner-01.jpg";

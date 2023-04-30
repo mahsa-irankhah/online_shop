@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 //styles 
-import "./landing page/styles/Card.scss";
+import "./styles/Card.scss";
 
 const Card = ({product}) => {
     
@@ -20,7 +20,7 @@ const Card = ({product}) => {
               <div className="card-body">
                 <h5 className="card-title text-start">{newTitle}</h5>
                 <p className="card-title text-start">$ {product.price}</p>
-                <Link to="/" className="view-link">
+                <Link to={`products/${product.id}`} className="view-link">
                   view product
                 </Link>
               </div>

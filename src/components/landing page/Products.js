@@ -12,7 +12,7 @@ const Products = () => {
     const productState = useSelector((state) => state.productState);
 
     useEffect(() => {
-      dispatch(fetchProducts());
+     if (!productState.products.length) {dispatch(fetchProducts());} 
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
